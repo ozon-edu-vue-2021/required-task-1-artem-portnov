@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/loader.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js" defer></script>
     <title>Broken page</title>
 </head>
 
@@ -25,28 +26,26 @@
         <section class="images content"></section>
     </main>
     <div class="popup">
-        <button class="action close">&Cross;</button>
+        <button class="action close">&#10799;</button>
         <div class="content"></div>
     </div>
 
-    <script src="./scripts/index.js"></script>
-
     <template id="image">
         <a class="link" href="" data-id="">
-            <img src="" widht="250" alt=""></img>
+            <img src="" widht="250" alt="">
         </a>
     </template>
 
     <template id="popup-image">
-        <div>
-            <figure>
+        <figure>
+            <div class="img__container">
                 <img src="" alt="">
-                <figcaption>
-                    Автор: <address class="author"></address>
-                </figcaption>
-            </figure>
-            <a class="link open" href="" target="_blank">Открыть в полном размере</a>
-        </div>
+            </div>
+            <figcaption>
+                Автор: <address class="author"></address>
+            </figcaption>
+        </figure>
+        <a class="link open" href="" target="_blank">Открыть в полном размере</a>
     </template>
 </body>
 
